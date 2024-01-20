@@ -1,11 +1,11 @@
 import Image from 'next/image'
 import Navbar from './navbar'
-import style from "../app/style/header.module.css"
+import styles from "../app/style/header.module.css"
 
 export default function Header() {
     return (
-        <header className={style.header} >
-            <div className="contenedor">
+        <header className={styles.header} >
+            <div className={`contenedor ${styles.barra}`}>
                 <Image src="/img/logo.svg"
                     width={300}
                     height={40}
