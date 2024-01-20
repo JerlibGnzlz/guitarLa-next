@@ -1,16 +1,16 @@
 
 export const metadata = {
 
-    title: "GuitarLA - Acerca de nosotros",
+    title: "GuitarLA - Acerca de Nosotros",
     description: "My App guitarras",
 };
 
 const PageNosotros = () => {
     return (
 
-        <>
-            <h1>Desde nosotros</h1>
-        </>
+
+        <h1>Desde Nosotros</h1>
+
     )
 }
 

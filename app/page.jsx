@@ -1,14 +1,14 @@
 
 export const metadata = {
 
-  title: "Guitar-Next",
+  title: "GuitarLA - Inicio",
   description: "app guitarras",
 };
 
 export default function Home() {
   return (
     <>
-      <h1>Hola mundo next</h1>
+      <h1>Inicio de la pagina en NEXT</h1>
     </>
 
   );
