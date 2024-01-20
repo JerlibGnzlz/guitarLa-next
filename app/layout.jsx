@@ -1,12 +1,11 @@
 import { Caveat } from 'next/font/google'
-import "./globals.css";
-import Navbar from '../components/navbar';
-import Header from '@/components/header';
-import Footer from '@/components/footer';
+import "./style/globals.css"
+import Header from '../components/header';
+import Footer from '../components/footer';
 
 
 const caveat = Caveat({
-  subsets: ['cyrillic-ext', "latin"],
+  subsets: ['cyrillic-ext'],
   display: 'swap',
 })
 
