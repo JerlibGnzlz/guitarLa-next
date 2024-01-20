@@ -1,4 +1,9 @@
 
+export const metadata = {
+
+    title: "GuitarLA - Acerca de nosotros",
+    description: "My App guitarras",
+};
 
 const PageNosotros = () => {
     return (
