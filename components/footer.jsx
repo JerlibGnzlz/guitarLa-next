@@ -1,6 +1,8 @@
+import styles from "../app/style/footer.module.css";
+
 
 export default function Footer() {
     return (
-        <h2>Footer</h2>
-    )
+        <p className={styles.footer}>Todos los derechos reservados</p>
+    );
 }
