@@ -1,12 +1,13 @@
 "use client"
-import { useParams } from 'next/navigation'
+
+import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import styles from "../app/style/header.module.css"
 
 
 
 export default function Navbar() {
-    const router = useParams()
+    const router = usePathname()
     console.log(router)
 
 
@@ -15,25 +16,20 @@ export default function Navbar() {
     return (
         <>
             <nav className={styles.navegacion}>
-                <Link href="/">
-                    <a className={router.pathname == "/" ? styles.active : ""}>
-                        Inicio
-                    </a>
+                <Link className={`link ${router === '/' ? styles.active : ''}`} href="/">
+                    Inicio
                 </Link>
-                <Link href="./nosotros">
-                    <a className={router.pathname == "/nosotros" ? styles.active : ""}>
-                        Nosotros
-                    </a>
+
+                <Link className={`link ${router === '/nosotros' ? styles.active : ''}`} href='/nosotros'>
+                    Nosotros
                 </Link>
-                <Link href="./tienda">
-                    <a className={router.pathname == "/tienda" ? styles.active : ""}>
-                        Tienda
-                    </a>
+
+                <Link className={`link ${router === "/tienda" ? styles.active : ''}`} href='/tienda'>
+                    Tienda
                 </Link>
-                <Link href="./blog">
-                    <a className={router.pathname == "/blog" ? styles.active : ""}>
-                        Blog
-                    </a>
+
+                <Link className={`link ${router === '/blog' ? styles.active : ''}`} href='/blog'>
+                    Blog
                 </Link>
             </nav >
         </>
