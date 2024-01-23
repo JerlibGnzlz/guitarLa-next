@@ -5,8 +5,8 @@ export const metadata = {
 };
 export default function TiendaPage() {
     return (
-        <h1>
-            desde tienda
-        </h1>
-    )
+        <main className="contenedor">
+            <h2 className="heading">Nuestra Coleccion</h2>
+        </main>
+    );
 }
