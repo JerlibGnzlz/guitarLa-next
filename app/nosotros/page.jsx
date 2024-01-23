@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Link from "next/link"
-import styles from "../style/nosotros.module.css"
+import Link from "next/link";
+import styles from "../style/nosotros.module.css";
 
 export const metadata = {
 
@@ -26,7 +26,7 @@ const PageNosotros = () => {
 
                 <div>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius rhoncus ex, vitae pellentesque nisl congue sit amet. Vivamus dignissim sollicitudin lorem, sit amet porta leo sagittis at. Morbi at pellentesque leo. Sed finibus quam ut est bibendum, eget pellentesque eros feugiat.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius rhoncus ex, vitae pellentesque nisl congue sit amet. Vivamus dignissim sollicitudin lorem, sit amet porta leo sagittis at. Morbi at pellentesque leo. Sed finibus quam ut est bibendum.
                     </p>
 
                     <p>
@@ -36,7 +36,7 @@ const PageNosotros = () => {
                 </div>
             </div>
         </main>
-    )
-}
+    );
+};
 
-export default PageNosotros
+export default PageNosotros;
