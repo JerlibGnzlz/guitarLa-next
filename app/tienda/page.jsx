@@ -1,3 +1,6 @@
+import ListadoGuitarra from "../../components/listadoGuitarra";
+
+
 export const metadata = {
 
     title: "GuitarLA - Acerca de la tienda",
@@ -6,7 +9,10 @@ export const metadata = {
 export default function TiendaPage() {
     return (
         <main className="contenedor">
-            <h2 className="heading">Nuestra Coleccion</h2>
+            <h1 className="heading">Nuestra Coleccion</h1>
+
+            <ListadoGuitarra />
+
         </main>
     );
 }
