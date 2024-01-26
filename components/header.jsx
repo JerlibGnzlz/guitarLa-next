@@ -19,6 +19,7 @@ export default function Header() {
                             height={40}
                             alt="Imagen logotipo" />
                     </Link>
+
                     <Navbar />
                 </div>
             </header >

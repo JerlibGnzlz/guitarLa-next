@@ -3,6 +3,8 @@
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import styles from "../app/style/header.module.css"
+import Image from 'next/image'
+
 
 
 
@@ -31,6 +33,14 @@ export default function Navbar() {
                 <Link className={`link ${router === '/blog' ? styles.active : ''}`} href='/blog'>
                     Blog
                 </Link>
+
+                <Link href={"/carrito"}>
+                    <Image src="/img/carrito.png"
+                        width={15}
+                        height={25}
+                        alt="Imagen de carrito" />
+                </Link>
+
             </nav >
         </>
     )
