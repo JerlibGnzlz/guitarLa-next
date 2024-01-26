@@ -1,13 +1,17 @@
 import Link from "next/link"
 
+export const metadata = {
+
+    title: "GuitarLA - Page not found",
+};
 
 export default function NotFound() {
     return (
-        <div>
-            <h1>404</h1>
-            <h4>Page not found</h4>
-            <Link href={"/"}>
-                Regresar al Inicio
+        <div >
+            <p className="erro1">404</p>
+            <p className="erro1">Page not found</p>
+            <Link legacyBehavior href={"/"}>
+                <a className="error">Regresar al Inicio</a>
             </Link>
         </div>
     )

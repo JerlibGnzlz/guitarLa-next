@@ -1,8 +1,6 @@
 import Link from 'next/link';
 /* eslint-disable @next/next/no-async-client-component */
-
 import Image from 'next/image';
-
 import styles from "../app/style/guitarras.module.css";
 
 

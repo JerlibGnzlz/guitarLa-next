@@ -1,9 +1,9 @@
 
-export default function PagesDinamic({ params }) {
+export default function PagesDinamic({ params: url }) {
     return (
         <h1>
             Dynamic Routes
-            : {params.id}
+            : {url.id}
         </h1>
     )
 }
