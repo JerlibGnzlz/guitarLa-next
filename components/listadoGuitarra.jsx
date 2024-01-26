@@ -1,3 +1,4 @@
+import Link from 'next/link'
 /* eslint-disable @next/next/no-async-client-component */
 import Image from 'next/image'
 
@@ -14,13 +15,13 @@ const ListadoGuitarra = async () => {
         <div key={guitar.id}>
           <p>{guitar.attributes.nombre}</p>
           <p>{guitar.attributes.precio}</p>
-          <Image src={guitar.attributes.imagen}
+          {/* <p>{guitar.attributes.url}</p> */}
+          <Image src={guitar.attributes}
             width={400}
             height={900}
             alt={'Imagen de Guitarras'}
           />
-          {/* guitarra {guitar.attributes.nombre}
-          guitarra {guitar.attributes.precio} */}
+          <Link href={`/guitarras/${guitar.attributes.url}`} >Ver Producto</Link>
         </div>
 
       ))}
