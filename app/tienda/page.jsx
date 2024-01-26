@@ -13,6 +13,7 @@ export default function TiendaPage() {
         <main className="contenedor">
             <h1 className="heading">Nuestra Coleccion</h1>
 
+
             <ListadoGuitarra />
 
         </main>
