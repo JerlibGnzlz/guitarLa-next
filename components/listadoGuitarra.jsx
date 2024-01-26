@@ -1,11 +1,11 @@
-import Link from 'next/link'
+import Link from 'next/link';
 /* eslint-disable @next/next/no-async-client-component */
-import Image from 'next/image'
+import Image from 'next/image';
 
 const ListadoGuitarra = async () => {
-  const { data } = await loadPostGuitar()
+  const { data } = await loadPostGuitar();
 
-  console.log(data)
+  console.log(data);
 
 
 
@@ -34,13 +34,13 @@ export default ListadoGuitarra;
 
 
 export async function loadPostGuitar() {
-  const respuesta = await fetch(`${process.env.API_URL}/guitarras?populate=imagen`)
-  const resultado = await respuesta.json()
+  const respuesta = await fetch(`${process.env.API_URL}/guitarras?populate=imagen`);
+  const resultado = await respuesta.json();
 
   // console.log(resultado.data.attributes)
-  console.log(resultado.data)
+  console.log(resultado.data);
 
 
-  return resultado
+  return resultado;
 
 }
