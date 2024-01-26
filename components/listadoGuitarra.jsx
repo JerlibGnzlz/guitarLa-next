@@ -44,10 +44,8 @@ export async function loadPostGuitar() {
   const resultado = await respuesta.json();
 
 
-  // console.log(resultado.data.attributes)
   console.log(resultado.data);
 
-  console.log(resultado.data)
 
   return resultado;
 
