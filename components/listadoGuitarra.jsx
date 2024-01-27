@@ -1,3 +1,5 @@
+"use client"
+import { useState } from 'react';
 import Link from 'next/link';
 /* eslint-disable @next/next/no-async-client-component */
 import Image from 'next/image';
@@ -5,6 +7,11 @@ import styles from "../app/style/guitarras.module.css";
 
 
 const ListadoGuitarra = async () => {
+
+  // const [cantidad, setCantidad] = useState(0)
+
+  // console.log(cantidad)
+
   const { data } = await loadPostGuitar();
 
   console.log(data);
@@ -29,7 +36,10 @@ const ListadoGuitarra = async () => {
 
           <form className={styles.formulario}>
             <label for="cantidad">Cantidad: </label>
-            <select id='cantidad'>
+            <select
+            // onChange={e => setCantidad(+e.target.value)}
+            // id='cantidad'
+            >
               <option value="0">--Seleccione--</option>
               <option value="1">--1--</option>
               <option value="2">--2--</option>
