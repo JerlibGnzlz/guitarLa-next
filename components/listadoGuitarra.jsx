@@ -26,6 +26,20 @@ const ListadoGuitarra = async () => {
           <Link href={`/guitarras/${guitar.attributes.url}`} >
             Ver Producto
           </Link>
+
+          <form className={styles.formulario}>
+            <label for="cantidad">Cantidad: </label>
+            <select id='cantidad'>
+              <option value="0">--Seleccione--</option>
+              <option value="1">--1--</option>
+              <option value="2">--2--</option>
+              <option value="3">--3--</option>
+              <option value="4">--4--</option>
+              <option value="5">--5--</option>
+            </select>
+            <input type="submit" value="Agregar al Carrito" />
+
+          </form>
         </div>
 
       ))}
